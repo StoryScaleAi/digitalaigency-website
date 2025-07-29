@@ -281,7 +281,7 @@ function LoginPage() {
         try {
             await signInWithEmailAndPassword(auth, email, password);
             navigate('/dashboard');
-        } catch (err) => {
+        } catch (err) {
             setError(err.message);
         }
     };
