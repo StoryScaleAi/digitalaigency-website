@@ -44,16 +44,17 @@ const IconBarChart = () => (<svg xmlns="http://www.w3.org/2000/svg" className="w
 // --- Main App Component ---
 export default function App() {
   return (
-    <AuthProvider>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/signup" element={<SignUpPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/dashboard" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
-        <Route path="/brand/:brandId" element={<ProtectedRoute><BrandManagerPage /></ProtectedRoute>} />
-      </Routes>
-    </AuthProvider>
-</BrowserRouter>
+    <BrowserRouter>
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/dashboard" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
+          <Route path="/brand/:brandId" element={<ProtectedRoute><BrandManagerPage /></ProtectedRoute>} />
+        </Routes>
+      </AuthProvider>
+    </BrowserRouter>
   );
 }
 
