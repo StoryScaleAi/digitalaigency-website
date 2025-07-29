@@ -61,7 +61,7 @@ export default function App() {
 // --- Protected Route Component ---
 function ProtectedRoute({ children }) {
   const { user } = useAuth();
-  
+
   if (!user) {
     return <Navigate to="/login" replace />;
   }
@@ -110,8 +110,8 @@ function HomePage() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-x-6">
-             <Link to="/login" className="text-sm font-semibold leading-6 text-gray-300 hover:text-indigo-400">
-               Log in <span aria-hidden="true">&rarr;</span>
+            <Link to="/login" className="text-sm font-semibold leading-6 text-gray-300 hover:text-indigo-400">
+              Log in <span aria-hidden="true">&rarr;</span>
             </Link>
             <Link to="/signup" className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400">
               Sign Up
@@ -162,9 +162,9 @@ function HomePage() {
       </header>
       <main>
         <div className="relative isolate overflow-hidden pt-14">
-            <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-              <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style={{ clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)' }}></div>
-            </div>
+          <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+            <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style={{ clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)' }}></div>
+          </div>
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
@@ -185,20 +185,20 @@ function HomePage() {
           </div>
         </div>
         <div id="how-it-works" className="py-24 sm:py-32">
-            <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl lg:text-center">
-                    <h2 className="text-base font-semibold leading-7 text-indigo-400">The Future of Marketing</h2>
-                    <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Launch Winning Campaigns in 3 Simple Steps</p>
-                    <p className="mt-6 text-lg leading-8 text-gray-300">Our platform simplifies the entire creative process, from strategy to execution.</p>
-                </div>
-                <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-                    <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16">
-                        <div className="relative pl-16"><dt className="text-base font-semibold leading-7 text-white"><div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500"><span className="text-white font-bold">1</span></div>Add Your Brand</dt><dd className="mt-2 text-base leading-7 text-gray-300">Input your product details, target audience, and upload your brand assets. Our AI learns your unique voice.</dd></div>
-                        <div className="relative pl-16"><dt className="text-base font-semibold leading-7 text-white"><div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500"><span className="text-white font-bold">2</span></div>Generate Campaigns</dt><dd className="mt-2 text-base leading-7 text-gray-300">Select your ad platform and let our AI generate dozens of ad angles, creatives, and landing pages based on proven marketing playbooks.</dd></div>
-                        <div className="relative pl-16"><dt className="text-base font-semibold leading-7 text-white"><div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500"><span className="text-white font-bold">3</span></div>Launch & Optimize</dt><dd className="mt-2 text-base leading-7 text-gray-300">Deploy your campaigns with confidence. Our system will provide insights to help you scale what's working.</dd></div>
-                    </dl>
-                </div>
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:text-center">
+              <h2 className="text-base font-semibold leading-7 text-indigo-400">The Future of Marketing</h2>
+              <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">Launch Winning Campaigns in 3 Simple Steps</p>
+              <p className="mt-6 text-lg leading-8 text-gray-300">Our platform simplifies the entire creative process, from strategy to execution.</p>
             </div>
+            <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+              <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-3 lg:gap-y-16">
+                <div className="relative pl-16"><dt className="text-base font-semibold leading-7 text-white"><div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500"><span className="text-white font-bold">1</span></div>Add Your Brand</dt><dd className="mt-2 text-base leading-7 text-gray-300">Input your product details, target audience, and upload your brand assets. Our AI learns your unique voice.</dd></div>
+                <div className="relative pl-16"><dt className="text-base font-semibold leading-7 text-white"><div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500"><span className="text-white font-bold">2</span></div>Generate Campaigns</dt><dd className="mt-2 text-base leading-7 text-gray-300">Select your ad platform and let our AI generate dozens of ad angles, creatives, and landing pages based on proven marketing playbooks.</dd></div>
+                <div className="relative pl-16"><dt className="text-base font-semibold leading-7 text-white"><div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-500"><span className="text-white font-bold">3</span></div>Launch & Optimize</dt><dd className="mt-2 text-base leading-7 text-gray-300">Deploy your campaigns with confidence. Our system will provide insights to help you scale what's working.</dd></div>
+              </dl>
+            </div>
+          </div>
         </div>
         <div id="features" className="py-24 sm:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8"><div className="mx-auto max-w-2xl sm:text-center"><h2 className="text-base font-semibold leading-7 text-indigo-400">Everything You Need</h2><p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">An Unfair Advantage for Marketers</p><p className="mt-6 text-lg leading-8 text-gray-300">We've productized the expertise of world-class media buyers into a single, powerful platform.</p></div></div>
@@ -325,7 +325,7 @@ function LoginPage() {
 }
 
 // --- 4. The Dashboard Page Component (Unchanged)---
-function DashboardPage() { 
+function DashboardPage() {
   const { user } = useAuth();
   const navigate = useNavigate();
   const [brands, setBrands] = useState([]);
@@ -390,64 +390,64 @@ function DashboardPage() {
           </div>
         </div>
       </nav>
-      
+
       <div className="py-10">
         <header>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center">
-                <h1 className="text-3xl font-bold leading-tight tracking-tight text-white">Your Brands</h1>
-                <button 
-                    onClick={() => setShowAddForm(!showAddForm)}
-                    className="rounded-md bg-indigo-500 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400"
-                >
-                    {showAddForm ? 'Cancel' : '+ Add New Brand'}
-                </button>
+              <h1 className="text-3xl font-bold leading-tight tracking-tight text-white">Your Brands</h1>
+              <button
+                onClick={() => setShowAddForm(!showAddForm)}
+                className="rounded-md bg-indigo-500 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400"
+              >
+                {showAddForm ? 'Cancel' : '+ Add New Brand'}
+              </button>
             </div>
           </div>
         </header>
         <main>
           <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
             {showAddForm && (
-                <div className="my-8 bg-gray-800 p-6 rounded-lg">
-                    <form onSubmit={handleAddBrand} className="space-y-4">
-                        <div>
-                            <label htmlFor="brand-name" className="block text-sm font-medium text-gray-300">Brand Name</label>
-                            <input type="text" id="brand-name" value={newBrandName} onChange={(e) => setNewBrandName(e.target.value)} required className="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 text-white"/>
-                        </div>
-                        <div>
-                            <label htmlFor="brand-url" className="block text-sm font-medium text-gray-300">Website URL</label>
-                            <input type="url" id="brand-url" value={newBrandUrl} onChange={(e) => setNewBrandUrl(e.target.value)} required className="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 text-white"/>
-                        </div>
-                        <button type="submit" className="rounded-md bg-green-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-500">
-                            Save Brand
-                        </button>
-                    </form>
-                </div>
+              <div className="my-8 bg-gray-800 p-6 rounded-lg">
+                <form onSubmit={handleAddBrand} className="space-y-4">
+                  <div>
+                    <label htmlFor="brand-name" className="block text-sm font-medium text-gray-300">Brand Name</label>
+                    <input type="text" id="brand-name" value={newBrandName} onChange={(e) => setNewBrandName(e.target.value)} required className="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 text-white"/>
+                  </div>
+                  <div>
+                    <label htmlFor="brand-url" className="block text-sm font-medium text-gray-300">Website URL</label>
+                    <input type="url" id="brand-url" value={newBrandUrl} onChange={(e) => setNewBrandUrl(e.target.value)} required className="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 text-white"/>
+                  </div>
+                  <button type="submit" className="rounded-md bg-green-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-500">
+                    Save Brand
+                  </button>
+                </form>
+              </div>
             )}
 
             <div className="px-4 py-8 sm:px-0">
-                {brands.length === 0 && !showAddForm ? (
-                    <div className="rounded-lg border-4 border-dashed border-gray-700 p-8 text-center">
-                        <h2 className="text-xl font-semibold">No brands yet!</h2>
-                        <p className="mt-2 text-gray-400">
-                        Click "Add New Brand" to get started.
-                        </p>
+              {brands.length === 0 && !showAddForm ? (
+                <div className="rounded-lg border-4 border-dashed border-gray-700 p-8 text-center">
+                  <h2 className="text-xl font-semibold">No brands yet!</h2>
+                  <p className="mt-2 text-gray-400">
+                    Click "Add New Brand" to get started.
+                  </p>
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {brands.map(brand => (
+                    <div key={brand.id} className="bg-gray-800 rounded-lg p-4 flex flex-col justify-between">
+                      <div>
+                        <h3 className="font-bold text-lg">{brand.name}</h3>
+                        <a href={brand.url} target="_blank" rel="noopener noreferrer" className="text-indigo-400 text-sm hover:underline truncate">{brand.url}</a>
+                      </div>
+                      <Link to={`/brand/${brand.id}`} className="mt-4 text-center rounded-md bg-gray-600 px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-500">
+                        Manage Brand
+                      </Link>
                     </div>
-                ) : (
-                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                        {brands.map(brand => (
-                            <div key={brand.id} className="bg-gray-800 rounded-lg p-4 flex flex-col justify-between">
-                                <div>
-                                    <h3 className="font-bold text-lg">{brand.name}</h3>
-                                    <a href={brand.url} target="_blank" rel="noopener noreferrer" className="text-indigo-400 text-sm hover:underline truncate">{brand.url}</a>
-                                </div>
-                                <Link to={`/brand/${brand.id}`} className="mt-4 text-center rounded-md bg-gray-600 px-3 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-500">
-                                    Manage Brand
-                                </Link>
-                            </div>
-                        ))}
-                    </div>
-                )}
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         </main>
@@ -496,7 +496,7 @@ function BrandManagerPage() {
         setIsAnalyzing(true);
         setAnalysisResult('');
         setAnalysisError('');
-        
+
         try {
             const functions = getFunctions();
             const scrapeUrl = httpsCallable(functions, 'scrapeUrl');
@@ -562,7 +562,7 @@ function BrandManagerPage() {
                                     {isAnalyzing ? 'Analyzing...' : '✨ Analyze Brand Website'}
                                 </button>
                             </div>
-                            
+
                             {/* --- NEW: Display Area for Results --- */}
                             <div className="mt-6">
                                 {analysisError && <div className="p-4 bg-red-900/50 text-red-300 border border-red-500 rounded-md">{analysisError}</div>}
