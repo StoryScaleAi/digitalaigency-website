@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext, createContext } from 'react';
-import { Routes, Route, Link, useNavigate, useParams, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link, useNavigate, useParams, Navigate } from 'react-router-dom';
 import { auth, db } from './firebase';
 import {
   createUserWithEmailAndPassword,
@@ -53,6 +53,7 @@ export default function App() {
         <Route path="/brand/:brandId" element={<ProtectedRoute><BrandManagerPage /></ProtectedRoute>} />
       </Routes>
     </AuthProvider>
+</BrowserRouter>
   );
 }
 
