@@ -1,13 +1,14 @@
 import React, { useState, useEffect, useContext, createContext } from 'react';
 import { Routes, Route, Link, useNavigate, useParams, Navigate } from 'react-router-dom';
 import { auth, db } from './firebase';
-import { 
-  createUserWithEmailAndPassword, 
-  signInWithEmailAndPassword, 
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
   onAuthStateChanged,
   signOut
 } from "firebase/auth";
-import { collection, addDoc, query, where, onSnapshot, doc, getDoc, getFunctions, httpsCallable } from "firebase/firestore";
+import { collection, addDoc, query, where, onSnapshot, doc, getDoc } from "firebase/firestore";
+import { getFunctions, httpsCallable } from "firebase/functions";
 
 // --- ARCHITECTURAL FIX: Create a React Context for Authentication ---
 const AuthContext = createContext();
